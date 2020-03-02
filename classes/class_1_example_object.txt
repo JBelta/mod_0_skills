@@ -1,6 +1,6 @@
 object waiters
 
-attributes
+attributes -
 
 water_full = false
 
@@ -10,7 +10,7 @@ menu = {steak: 13, fish: 10, soup: 5}
 
 bill = 0
 
-methods
+methods -
 
 pitcher
   water_full = true
