@@ -1,6 +1,6 @@
 class Staff
 
-attributes
+attributes -
 
 water_full (boolean)
 
@@ -10,7 +10,7 @@ menu (hash)
 
 bill (float)
 
-methods
+method -
 
 pitcher (changes value of water_full)
 
