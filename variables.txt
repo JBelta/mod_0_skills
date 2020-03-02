@@ -1,0 +1,19 @@
+Variables
+
+food = "Banana"
+
+is_delicious = true
+
+food = "Steak"
+
+num2 = 4
+
+num7 = 12
+
+quotient = 3
+
+songs = ["YMCA", "Thunder Struck", "Freebird"]
+
+songs.shift
+
+food.length
