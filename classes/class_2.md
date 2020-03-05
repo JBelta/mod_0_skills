@@ -4,18 +4,18 @@ attributes -
 
 taps (array)
 
-over_eighteen (boolean)
+happy_hour (boolean)
 
-over_twenty_one (boolean)
+bar_token (integer)
 
-tips (float)
+kegs (array)
 
 methods -
 
-apply? (checks over_eighteen value to see if employment is possible)
+kicked (removes object from taps array)
 
-id? (if > 21, over_twenty_one value = true. < 21, over_twenty_one = false)
+tap_in (adds keg object to taps array)
 
-count (equates total of tips and puts total as value)
+after_five (changes happy_hour value to true)
 
-tap_in (arranges and adds/ deletes taps array)
+give_token (Subtracts bar_token integer buy 1)
