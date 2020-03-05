@@ -1,26 +1,23 @@
-object back_bar
+object omallys
 
 attributes -
 
-taps = ("Fat Tire", "New Castle", "Stella")
+taps = ["Guinness", "Smithwicks", "Harp"]
 
-ice_machine = true
+happ_hour = false
 
-tab = {wine: 8, cocktail: 6}
+bar_token = 20
 
-happy_hour = false
+kegs = ["Guiness", "Smithwicks", "Harp"]
 
 methods -
 
-kicked("New Castle")
-  taps = ("Fat Tire", "Stella")
+kicked: taps.delete("Harp")
+ taps = ["Guinness", "Smithwicks"]
 
-after_five?
-  the time is 17:01
-  happy_hour = true
+tap_in: taps << kegs[2]
+ taps = ["Guinness", "Smithwicks", "Harp"]
 
-order("Stella")
-  tab = {wine: 8, cocktail: 6, draft: 4}
+after_five: happy_hour = true
 
-ice_switch
-  ice_machine = true
+give_token: bar_token -= 1 = 19
