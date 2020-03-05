@@ -4,7 +4,7 @@ attributes -
 
 taps = ["Guinness", "Smithwicks", "Harp"]
 
-happ_hour = false
+happy_hour = false
 
 bar_token = 20
 
