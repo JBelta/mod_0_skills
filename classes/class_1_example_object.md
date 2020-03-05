@@ -2,27 +2,20 @@ object waiters
 
 attributes -
 
-water_full = false
+on_shift = false
 
-greet = "Good afternoon, may I take your order?"
+pay_rate = {host: 0, waiter: 0, cook: 0}
 
-menu = {steak: 13, fish: 10, soup: 5}
+uniform_color = "White"
 
-bill = 0
+hours = 10
 
 methods -
 
-pitcher
-  water_full = true
+clock_in: on_shift = true
 
-order
-  p greet
-    "Good afternoon, may I take your order?"
+add_pay: pay_rate[:waiter] = 9
 
-total
-  menu[:steak] * 2 + menu[:soup]
-    31
+change_color: uniform_color = "Black"
 
-tax
-  bill = 31 + (31 * 0.15)
-    bill = 35.65
+pay_check: hours * pay_rate[:waiter] = 90
