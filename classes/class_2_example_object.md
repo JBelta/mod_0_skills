@@ -8,7 +8,7 @@ happ_hour = false
 
 bar_token = 20
 
-kegs = ["Guiness", "Smithwicks", "Harp"]
+kegs = ["Guinness", "Smithwicks", "Harp"]
 
 methods -
 
